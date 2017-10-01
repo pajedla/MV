@@ -1,0 +1,98 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+@font-face{
+	font-family: 'sc';
+	src: url('../fonts/sc.ttf');
+	font-weight: bold;
+}
+html {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: url(../images/bg.png) #2b2b2b;
+	background-size: 14%;
+	background-position: -15px -15px;
+	margin: 0px;
+	height: 100%;
+	padding: 0px;
+}
+.content{
+	min-height: 100%;
+    margin-bottom: -20px;
+    margin-top: -5px;
+}
+* html .footer{
+	height: 100%;
+}
+h1,h2,h3,h4,h5 {
+	text-align: center;
+	color: #d0d0d0;
+	font-family: sc;
+	letter-spacing: 2.5px;
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+h1{
+	font-size: 75px; /*машинная вышивка*/
+	margin-top: 260px;
+}
+h2{
+	font-size: 23px; /*любой сложности*/
+}
+h3{
+	font-size: 20px; /*tailor*/
+	padding-top: 10px;
+}
+h4{
+	font-size: 14px;
+}
+h5{
+	font-size: 23px;
+	margin-top: 50px;
+}
+/*START NAV*/
+ul{
+	list-style-type: none;
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-padding-start: 0px;
+    width: 762px;
+    margin: 0 auto;
+    margin-top: 90px;/*POSITION NAV*/
+    height: 43px;
+}
+li{
+	display: inline;
+}
+ul a{
+	text-decoration: none;
+	color: #e84c57;
+	border: solid #e84c57 2px; /*#3085a3  e84c57*/
+	border-radius: 5px;
+	font-family: sc;
+	font-size: 24px;
+	letter-spacing: 2px;
+	float: left;
+	width: 130px;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	text-align: center;
+	margin: 2px 60px;
+	transition: color 1s, border 1s, background 1s;
+}
+ul a:hover{
+	color: #2b2b2b;
+	background: #404040;
+	border: solid #2b2b2b 2px;
+	transition: color .5s, border .5s, background .5s;
+}
+.main {
+	color: #2b2b2b;
+	background: #404040;
+	border: solid #2b2b2b 2px;
+}
+/*END NAV*/
